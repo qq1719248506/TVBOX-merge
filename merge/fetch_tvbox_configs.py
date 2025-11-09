@@ -7,12 +7,12 @@ from datetime import datetime
 # 1. 从 GitHub Secrets 读取配置
 # ======================
 
-GITHUB_TOKEN = os.getenv('GH_TOKEN')  # 用于读写你的目标仓库
-GITHUB_TOKEN = os.getenv('GH_TOKEN')
+GITHUB_TOKEN = os.getenv('TVBOX_TOKEN')  # 用于读写你的目标仓库
+GITHUB_TOKEN = os.getenv('TVBOX_TOKEN')
 if GITHUB_TOKEN:
-    print(f"当前 GH_TOKEN 值: {gh_token[:5]}...(共{len(gh_token)}位)")
+    print(f"当前 TVBOX_TOKEN 值: {TVBOX_TOKEN[:5]}...(共{len(TVBOX_TOKEN)}位)")
 else:
-    print("GH_TOKEN 环境变量未设置")
+    print("TVBOX_TOKEN 环境变量未设置")
 GITHUB_USERNAME = 'leexuben'
 REPO_NAME = 'TVBOX-merge'  # 注意：这里只是仓库名，不是 leexuben/TVBOX-merge
 FILE_PATH = 'source.txt'  # 比如根目录下的 source.txt
