@@ -10,7 +10,7 @@ from datetime import datetime
 GITHUB_TOKEN = os.getenv('GH_TOKEN')  # 用于读写你的目标仓库
 GITHUB_USERNAME = os.getenv('GH_USERNAME', '你的用户名')  # 例如 'hxy97'
 REPO_NAME = os.getenv('REPO_NAME', '你的仓库名')  # 例如 'tvbox-config-collector'
-FILE_PATH = os.getenv('FILE_PATH', 'source.txt')  # 保存结果的文件，如 source.txt
+FILE_PATH = os.getenv('FILE_PATH', 'source.txt')  # 保存结果的文件，如 merge/source.txt
 
 # 🔍 搜索关键词（你可以自行增删，比如 tvbox、m3u、源、接口等）
 KEYWORDS = ['荐片', '采集', '.spider']  # 你关注的 tvbox 配置相关关键词
