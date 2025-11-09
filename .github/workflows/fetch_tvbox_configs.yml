@@ -1,4 +1,4 @@
-name: 每天定时抓取tvbox相关配置代码
+name: fetch_tvbox_configs.yml
 
 on:
   schedule:
